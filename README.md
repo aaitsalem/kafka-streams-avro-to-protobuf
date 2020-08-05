@@ -1,22 +1,22 @@
 # kafka-streams-avro-to-protobuf
 transform avro message <identity> to protobuf <identity> (Protocol Buffers Google ) 
   
-#Build project
+# Build project
 gradle build
 
-#Execution 
+# Execution 
 java -jar build/libs/kstreams-avro-to-protobuf-0.0.1.jar configuration/dev.properties
 
-#create topics :
+# Create topics :
 avro-identity and proto-indentity
 
-#consume message protobuf:
+# Consume message protobuf:
 ./kafka-protobuf-console-consumer --bootstrap-server localhost:9092 --topic proto-identity --from-beginning
 
-#produce message avro:
+# Produce message avro:
 ./kafka-avro-console-producer --topic avro-identity --broker-list localhost:9092 --property value.schema="$(< src/main/avro/identity.avsc)"
 
-#message
+# Example
 {"nom":"Starsky","prenom":"hutch","age":"53","sexe":"M"}
 
 
