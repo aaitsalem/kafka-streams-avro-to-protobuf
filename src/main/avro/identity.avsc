@@ -1,0 +1,23 @@
+{
+  "namespace": "io.agh.avro",
+  "type": "record",
+  "name": "Identity",
+  "fields": [
+    {
+      "name": "nom",
+      "type": "string"
+    },
+    {
+      "name": "prenom",
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "type": "string"
+    },
+    {
+      "name": "sexe",
+      "type": "string"
+    }
+  ]
+}

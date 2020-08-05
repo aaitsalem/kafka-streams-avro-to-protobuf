@@ -1,0 +1,9 @@
+syntax = "proto3";
+package io.agh.proto;
+option java_outer_classname = "IdentityProtos";
+message Identity {
+  string nom = 1;
+  string prenom = 2;
+  string age = 3;
+  string sexe = 4;
+}
