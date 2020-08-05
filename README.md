@@ -1,5 +1,5 @@
 # kafka-streams-avro-to-protobuf
-Transform avro message "identity" to protobuf "identity" message (Protocol Buffers Google ) 
+Transform avro message "identity" to protobuf "identity" message ( Protocol Buffers Google ) 
   
 ### Build project
 gradle build
