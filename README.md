@@ -1,7 +1,7 @@
 # kafka-streams-avro-to-protobuf
 transform avro message <identity> to protobuf <identity> (Protocol Buffers Google ) 
   
-## Build project
+### Build project
 gradle build
 
 # Execution 
